@@ -1,0 +1,47 @@
+.Container-Hero h4{
+    color:rgba(255, 255, 255, 0.7);
+        font-weight: 100;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+}
+
+
+.Container-Hero h2{
+    font-size: 3rem;
+    font-weight: 100;
+    color: #fff;
+
+}
+
+
+.BtnContainer{
+    margin-top: 2rem;
+    padding-left: 40px;
+}
+.BtnContainer button{
+    border: none;
+    padding: 0.9rem 2.5rem;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.BtnContainer button:nth-of-type(1){
+    background-color: #999999;
+}
+
+.BtnContainer button:nth-of-type(2){
+    background-color: #000;
+}
+
+
+.BtnContainer button:hover{
+        transform: translateY(-2px);
+    }
+
+@media only screen and (max-width: 600px) {
+    .BtnContainer {
+        margin-right: 3rem 3rem;        
+    }
+}

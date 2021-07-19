@@ -1,0 +1,36 @@
+.iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  }
+  
+  /* For mobile phones: */
+  @media only screen and (max-width: 600px) {
+    .iframe {
+      padding: 0 0;
+    }
+  }
+  .video {
+    position: flex;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+  }
+
+  .close {
+    position: absolute;
+    color: #aaaa;
+    font-size: 60px;
+    float: top;
+    font-weight: bold;
+    right: 5px;
+    top: 5px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }

@@ -1,0 +1,42 @@
+.icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+@media screen and (max-width:370px){
+    .icon{
+        padding-bottom: 0;
+    }
+    
+}
+
+.text{
+    font-weight: bold;
+    color:#8d6852 ;
+    font-size: 40px;
+    align-items: center;
+}
+
+.text-center{
+    padding-top: 1rem;
+    text-align: center;
+
+}
+
+.icon_class>.MuiSvgIcon-root{
+    color:#8d6852 ;
+    
+}
+
+.text-black-50 { 
+    color: rgba(black, .5) !important;
+}
+
+.textField .p-2{
+    
+    margin-bottom: 1rem;
+}
+
+

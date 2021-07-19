@@ -1,0 +1,50 @@
+.navbar{
+    background-color: transparent;
+  }
+  
+  .navbar.colorChange{
+    background-color: #141A29;
+  } 
+  
+nav{
+  display: flex;
+  justify-content: space-around;
+  min-height: 8vh;
+  position: absolute;
+  width: 100%;
+  align-items:center;
+}
+
+.logo{
+  display: flex;
+  color: white;
+  font-size: 32px;
+}
+.logo h4 {
+  margin-left: 4px;
+  list-style: none;
+  justify-content: space-around;
+  width: 50%;
+  font-size:24px ;
+}
+
+.navlinks{
+  display: flex;
+  list-style:none;
+  justify-content: space-around;
+  text-decoration: none;
+  width: 50%;
+}
+
+.link{
+  letter-spacing: 3px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.link a{
+  color: black;
+}
+.link a:hover{
+  color: white;
+}
