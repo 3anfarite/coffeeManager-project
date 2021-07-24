@@ -6,44 +6,27 @@ import About from './components/About';
 import Navbar from './components/Navbar';
 import Dropdown from './components/Dropdown';
 import GlobalStyle from './globalStyles'
-import {Switch, Route} from './reportWebVitals';
+import {BrowserRouter as Router , Switch, Route, Link, Redirect} from 'react-router-dom';
 import Pricing from './components/Pricing';
 import Features from './components/Features';
 import Services from "./components/Services";
 import Contact from "./components/Contact";
 import ScrollToTop from "./components/ScrollToTop";
+import MainPage from './pages/MainPage';
+import { Component } from "react";
 
 
-function App() {
+class App extends Component {
+  render(){
 
-  const [isOpen, setIsOpen] = useState(false)
+  return <Router>
+      <Switch>
+        <Route  path="/" component={MainPage}/>
+      </Switch>
+    </Router>
 
-  const toggle = () => {
-    setIsOpen(!isOpen)
-  }
-   
-
- 
-
-  return (
-    <>
-      <GlobalStyle/>
-      {/* <NavMenu/> */}
-      <Navbar toggle = {toggle} style ={{overflowY:"scroll"}}/>
-      <Dropdown isOpen = {isOpen} toggle = {toggle}/> 
-      <Hero/>
-      <Services />
-      <Pricing/>
-      <Features/> 
-      <Contact />
-      <About />
-      <Footer/>
-      <ScrollToTop/>
-    </>
-
-  );
 }
-
+}
 export default App;
 
 
