@@ -11,6 +11,8 @@ import Pricing from './components/Pricing';
 import Features from './components/Features';
 import Services from "./components/Services";
 import Contact from "./components/Contact";
+import ScrollToTop from "./components/ScrollToTop";
+
 
 
 function App() {
@@ -37,6 +39,8 @@ function App() {
       <Contact />
       <About />
       <Footer/>
+      <ScrollToTop/>
+
     </>
 
   );
