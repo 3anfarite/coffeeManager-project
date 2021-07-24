@@ -103,7 +103,7 @@ const Hero = () => {
  
     return (
 
-        <HeroContainer>
+        <HeroContainer id="home">
             
         <HeroSection>
 

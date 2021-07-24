@@ -33,13 +33,12 @@ const NavLink = css`
 
     &:hover{
         background-color: #40798C;
-        height: 70px;
-    
+        height: 55px;
     }
 `
 
 const Logo = styled(Link)`
-    ${NavLink}
+    text-decoration: none;
     color: #fff;  
     font-family :'Raleway', sans-serif ;
     font-size: 2rem;
@@ -114,7 +113,7 @@ const Navbar = ({toggle}) => {
     return (
         <Fragment>
             <Nav className={colorChange ? 'navbar colorChange' : 'navbar'}>
-                <Logo to="/">Coffee</Logo>
+                <Logo onClick={(e) => scrollSec("home", e)}         >Coffee</Logo>
                 <MenuBars onClick={toggle}/>
                 <NavMenu>
                     {menuData.map((item, index)=>(
