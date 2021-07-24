@@ -114,7 +114,7 @@ const Navbar = ({toggle}) => {
     return (
         <Fragment>
             <Nav className={colorChange ? 'navbar colorChange' : 'navbar'}>
-                <Logo to="/">Coffee</Logo>
+                <Logo onClick={(e) => scrollSec("home", e)}         >Coffee</Logo>
                 <MenuBars onClick={toggle}/>
                 <NavMenu>
                     {menuData.map((item, index)=>(
