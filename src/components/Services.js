@@ -130,24 +130,7 @@ const Services = () => {
             pinReparent: true,
           },
         });
-        t1.fromTo(
-          document.getElementById("line"),
-    
-          {
-            height: "6rem",
-          },
-          {
-            height: "2rem",
-            duration: 2,
-            scrollTrigger: {
-              trigger: document.getElementById("line"),
-              start: "top top",
-              end: "bottom top+=100",
-              scrub: true,
-            //   markers:true,
-            },
-          }
-        );
+        
     
         revealRefs.current.forEach((el, index) => {
            console.log(el.childNodes);
@@ -281,8 +264,8 @@ const Services = () => {
         <ServiceSection >
             <Background ref={ref}>
                 <Title>What we offer</Title>
-                <Line id="line"/>
-                <Triangle id="triangle"/>
+                {/* <Line id="line"/>
+                <Triangle id="triangle"/> */}
             </Background>
             <Content ref={addToRefs} id="services" >
                 <TextBlock
