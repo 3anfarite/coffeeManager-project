@@ -27,7 +27,7 @@ function MainPage() {
   return (
     <>
       <GlobalStyle/>
-      {/* <NavMenu/> */}
+      {/* <NavMenu/>  ????*/}
       <Navbar toggle = {toggle} style ={{overflowY:"scroll"}}/>
       <Dropdown isOpen = {isOpen} toggle = {toggle}/> 
       <Hero/>
