@@ -1,0 +1,32 @@
+.menu_icon_button{
+    background-color: blue;
+}
+
+.left{
+    position: absolute;
+    left: 0px;
+    width: 50%;
+}
+
+.canvas_right{
+    margin-top: -60px;
+    right: 50%;
+    left: 50%;
+    display: flex;
+    width: 50%;
+    position: absolute;
+    background-color: #f3f2ef;
+    height: 100%;
+    z-index: -1;
+}
+.canvas-container{
+    width: 400px;
+    padding-top: 100px;
+    padding-left: 16%;
+
+}
+
+canvas {
+    display: block;
+    background-color: white;
+}

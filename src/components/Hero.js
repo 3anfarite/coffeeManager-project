@@ -130,7 +130,7 @@ const Hero = () => {
             
         </HeroSection>
         <BtnWrapper>
-            <BtnPopup onClick={()=>setIsVideo(true)}>How it works</BtnPopup>
+            <BtnPopup to="/shop">tomporary menu btn</BtnPopup>
         </BtnWrapper>
         </HeroContainer>
     )

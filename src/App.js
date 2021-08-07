@@ -1,19 +1,22 @@
 import React, {useState} from "react";
 import {BrowserRouter as Router , Switch, Route, Link, Redirect} from 'react-router-dom';
+import { Component } from "react";
 
 import MainPage from './pages/MainPage';
-import { Component } from "react";
+import Shop from './pages/Shop';
 
 
 class App extends Component {
   render(){
 
-  return <Router>
+  return(
+    <Router>
       <Switch>
-        <Route  path="/" component={MainPage}/>
+        <Route exact path="/" component={MainPage}/>
+        <Route  path="/shop" component={Shop}/>
       </Switch>
     </Router>
-
+    ) 
 }
 }
 export default App;
