@@ -21,18 +21,11 @@
 .BtnContainer button{
     border: none;
     padding: 0.9rem 2.5rem;
-    color: #fff;
+    background-color: #141A29;
+    color:white;
     transition: all 0.3s ease-in-out;
     margin: 0.5rem;
     cursor: pointer;
-}
-
-.BtnContainer button:nth-of-type(1){
-    background-color: #999999;
-}
-
-.BtnContainer button:nth-of-type(2){
-    background-color: #000;
 }
 
 

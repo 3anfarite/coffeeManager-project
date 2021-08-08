@@ -1,5 +1,4 @@
 import React from 'react'
-import DropList from '../droplist/DropList'
 import logo from '../../images/logo.svg'
 import './topnav.css'
 import { Button } from '@material-ui/core';

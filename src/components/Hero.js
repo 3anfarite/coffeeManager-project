@@ -1,12 +1,9 @@
 import React ,{useState}from 'react'
 import styled ,{ css }from 'styled-components/macro'
 import bg from '../images/Cafe.jpg'
-import ModalLogin from './ModalLogin';
-import '../styles/Hero.css'
-import ModalRegister from './ModalRegister';
 import VideoModal from './VideoModal';
 import { Link } from 'react-router-dom';
-
+import '../styles/Hero.css'
 
 
 const HeroSection = styled.section`
@@ -96,9 +93,19 @@ const BtnWrapper = styled.div`
 
 const Hero = () => {
 
-    const [isShown, setIsShown] = useState(false)
-    const [isOpen, setIsOpen] = useState(false)
+
     const [isVideo, setIsVideo] = useState(false)
+
+
+    const scrollSec = (id, e) => {
+        e.preventDefault();
+        const element = document.getElementById(id);
+        element.scrollIntoView({
+          behavior: "smooth",
+          block: "end",
+          inline: "nearest",
+        });
+      };
     
  
     return (
@@ -109,8 +116,7 @@ const Hero = () => {
 
             <HeroWrapper>               
             <Left>
-            <ModalLogin show = {isShown} onClose={()=>setIsShown(false)}>Login</ModalLogin>
-            <ModalRegister open = {isOpen} onClose={()=>setIsOpen(false)}>Registration</ModalRegister>
+            
             <VideoModal show = {isVideo} onClose={()=>setIsVideo(false)}/>
 
             <div className="Container-Hero">
@@ -118,9 +124,8 @@ const Hero = () => {
                 <h2>Make it Simple</h2>
                 <h2>SCAN AND ORDER</h2>
                 <div className="BtnContainer">
-                    <button onClick={()=>setIsShown(true)} >
-                    Log in</button>
-                    <button onClick={()=>setIsOpen(true)} >Register</button>
+                    <button onClick={(e) => scrollSec("contact", e)}>
+                                Contact Us</button>
                 </div>
             </div>
             </Left>

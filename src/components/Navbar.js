@@ -1,7 +1,8 @@
 import React , { useState, Fragment} from 'react'
 import styled, {css} from 'styled-components/macro'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
+import ModalLogin from './ModalLogin';
+import ModalRegister from './ModalRegister';
 import { Link } from 'react-router-dom'
 import { menuData } from '../data/MenuData'
 import { Button } from './Button'
@@ -87,6 +88,8 @@ const NavBtn = styled.div`
 
 const Navbar = ({toggle}) => {
     const [colorChange, setColorchange] = useState(false);
+    const [isShown, setIsShown] = useState(false)
+    const [isOpen, setIsOpen] = useState(false)
 
     const changeNavbarColor = () =>{
         if(window.scrollY >= 100){
@@ -96,6 +99,7 @@ const Navbar = ({toggle}) => {
           setColorchange(false);
         }
      };
+     
     window.addEventListener('scroll', changeNavbarColor);
 
     const scrollSec = (id, e) => {
@@ -111,7 +115,13 @@ const Navbar = ({toggle}) => {
     
         
     return (
+        
         <Fragment>
+            
+            {/* login and register modals */}
+            <ModalLogin show = {isShown} onClose={()=>setIsShown(false)}>Login</ModalLogin>
+            <ModalRegister open = {isOpen} onClose={()=>setIsOpen(false)}>Registration</ModalRegister>
+
             <Nav className={colorChange ? 'navbar colorChange' : 'navbar'}>
                 <Logo onClick={(e) => scrollSec("home", e)}>Coffee</Logo>
                 <MenuBars onClick={toggle}/>
@@ -125,11 +135,20 @@ const Navbar = ({toggle}) => {
                     ))}
                 </NavMenu>
                 <NavBtn>
+                    
                     <Button 
                               primary="true" 
-                            style={{color:"black",backgroundColor:"white"}}
-                            onClick={(e) => scrollSec("contact", e)}>
-                                Contact Us
+                            style={{color:"white",backgroundColor:"black",
+                                    borderRadius:"30px"}}
+                            onClick={()=>setIsShown(true)} >
+                                Log in
+                    </Button>
+                    <Button 
+                              primary="true" 
+                            style={{color:"black",backgroundColor:"white",marginLeft:"5px",
+                                    borderRadius:"30px"}}
+                            onClick={()=>setIsOpen(true)} >
+                                Register
                     </Button>
                     
                 </NavBtn>
