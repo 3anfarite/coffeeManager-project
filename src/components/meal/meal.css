@@ -1,0 +1,45 @@
+.item-price {
+    color: gold;
+  }
+
+.item-photo {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+    border: 0.25rem solid gold;
+    border-radius: 0.25rem;
+    display: block;
+}
+
+.item-description {
+    margin-bottom: 0;
+    padding-top: 1rem;
+}
+
+.item-info header {
+    display: contents;
+    
+}
+.item-info h4 {
+  margin-bottom: 1rem;
+}
+
+.item-info{
+  margin-bottom: 2rem;
+  border-radius: 19px;
+  border-radius: 19px;
+  background: #ffffff;
+  box-shadow:  12px 12px 24px #c4c4c4,
+             -12px -12px 24px #ffffff;
+  padding: 1rem 1rem 1rem;
+}
+
+
+.menu-section{
+  right: 50%;
+  left: 50%;
+  width: 50%;
+  position: absolute;
+  background-color: white;
+  overflow-y: auto;
+}

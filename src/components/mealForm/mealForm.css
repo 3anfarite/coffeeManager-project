@@ -1,0 +1,71 @@
+.menu_icon_button{
+    background-color: blue;
+}
+
+.menu-form{
+  padding-top: 1rem;
+  position: absolute;
+  left: 50px;
+  max-height :650px;
+  width: 50%;
+  overflow-y: auto;
+}
+
+.add-category{
+  margin-bottom: 2rem;
+}
+
+.menu-section{
+    right: 50%;
+    left: 50%;
+    width: 50%;
+    position: absolute;
+    background-color: white;
+    height: 100%;
+    overflow-y: auto;
+}
+.menu-section h3{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.form-field {
+  margin: 10px 0 10px 0;
+  padding: 15px;
+  font-size: 16px;
+  border: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #f2f2f2
+  
+  
+}
+input::placeholder{
+  color: rgb(156, 156, 156);
+  font-weight: 100;
+}
+textarea::placeholder{
+  color: rgb(156, 156, 156);
+  font-weight: 100;
+}
+
+.add-meal-button{
+  display: flex;
+  height: 50px;
+  padding: 0;
+  background: hsl(226, 33%, 17%);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button__text,
+.button__icon {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 24px;
+  color: #fff;
+  height: 100%;
+}
